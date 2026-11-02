@@ -57,6 +57,11 @@ export function VideoModal({ film, onClose }: { film: Film | null; onClose: () =
               <h3 className="font-serif text-2xl">{film.title}</h3>
               <p className="text-sm text-muted-foreground">{film.genre} · {film.year} · {film.duration}</p>
             </div>
+            {film.youtubeId && (
+              <a href={`https://www.youtube.com/watch?v=${film.youtubeId}`} target="_blank" rel="noreferrer" className="mt-2 inline-block text-sm text-primary underline underline-offset-4">
+                Regarder sur YouTube
+              </a>
+            )}
             <p className="mt-2 text-muted-foreground">{film.synopsis}</p>
           </motion.div>
         </motion.div>
