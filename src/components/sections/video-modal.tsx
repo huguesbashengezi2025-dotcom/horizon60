@@ -43,6 +43,13 @@ export function VideoModal({ film, onClose }: { film: Film | null; onClose: () =
                   allowFullScreen
                   title={film.title}
                 />
+              ) : film.tiktokUrl ? (
+                <div className="flex h-full flex-col items-center justify-center gap-4 p-6 text-center">
+                  <p className="font-serif text-3xl">{film.title}</p>
+                  <a href={film.tiktokUrl} target="_blank" rel="noreferrer" className="rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground">
+                    Regarder sur TikTok
+                  </a>
+                </div>
               ) : (
                 <div className="flex h-full flex-col items-center justify-center gap-4 p-6 text-center">
                   <p className="font-serif text-3xl">{film.title}</p>
