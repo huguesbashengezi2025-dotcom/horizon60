@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { WhatsappIcon } from "@/components/icons";
 import { site } from "@/content/site";
 import { Reveal } from "@/components/motion/reveal";
-import { YoutubeIcon, TiktokIcon } from "@/components/icons";
+import { SocialLinks } from "@/components/social-links";
 
 export function Contact() {
   const year = new Date().getFullYear();
@@ -28,25 +29,26 @@ export function Contact() {
         </Reveal>
         <Reveal delay={0.3}>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href={`mailto:${site.contact.email}`} className="group flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-medium text-primary-foreground transition-transform hover:scale-105">
-              <Mail className="size-5" /> {site.contact.email}
-              <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            <a href={`mailto:${site.contact.email}`} className="group flex max-w-full items-center gap-2 rounded-full bg-primary px-5 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-105 sm:px-7 sm:text-base">
+              <Mail className="size-5 shrink-0" /> <span className="truncate">{site.contact.email}</span>
+              <ArrowUpRight className="size-4 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </a>
             {site.contact.whatsapp && (
               <a href={`https://wa.me/${site.contact.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full border border-border px-7 py-4 transition-colors hover:border-green-500 hover:text-green-400">
-                <MessageCircle className="size-5" /> WhatsApp
+                <WhatsappIcon className="size-5" /> WhatsApp
               </a>
             )}
           </div>
+        </Reveal>
+        <Reveal delay={0.4}>
+          <p className="mt-12 text-sm uppercase tracking-[0.3em] text-muted-foreground">Suis-moi</p>
+          <SocialLinks size="large" className="mt-5" />
         </Reveal>
       </div>
       <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-border/60 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:px-6">
         <p className="font-serif text-xl italic text-foreground">{site.name}</p>
         <p>© {year} {site.name}. Tous droits réservés.</p>
-        <div className="flex gap-4">
-          <a href={site.socials.youtube} target="_blank" rel="noreferrer" aria-label="YouTube" className="hover:text-foreground"><YoutubeIcon className="size-5" /></a>
-          <a href={site.socials.tiktok} target="_blank" rel="noreferrer" aria-label="TikTok" className="hover:text-foreground"><TiktokIcon className="size-5" /></a>
-        </div>
+        <SocialLinks />
       </div>
     </footer>
   );

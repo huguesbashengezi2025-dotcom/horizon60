@@ -22,10 +22,13 @@ export const site = {
   socials: {
     youtube: "https://www.youtube.com/@LeRecitOublie-bash01",
     tiktok: "https://www.tiktok.com/@hugues.bashengezi",
+    instagram: "https://www.instagram.com/bashengezi",
+    telegram: "https://t.me/HuguesBashengezi",
+    whatsapp: "https://wa.me/243893250105",
   },
   contact: {
     email: "huguesbashengezi2025@gmail.com",
-    whatsapp: "", // ex. "243810000000"
+    whatsapp: "243893250105",
   },
   stats: [
     { value: "5", label: "Films en ligne" },
