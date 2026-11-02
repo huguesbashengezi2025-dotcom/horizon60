@@ -4,6 +4,7 @@ import { motivation, site } from "@/content/site";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { TiktokIcon, YoutubeIcon } from "@/components/icons";
+import { Breathing } from "./breathing";
 
 export function Motivation() {
   return (
@@ -14,6 +15,7 @@ export function Motivation() {
           title="Motivation"
           text="Derrière chaque vidéo, la même idée : te donner la force de croire en tes rêves et de ne jamais abandonner."
         />
+        <Breathing />
         <div className="grid gap-5 sm:grid-cols-2">
           {motivation.map((m, i) => (
             <motion.article
