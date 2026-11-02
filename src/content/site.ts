@@ -50,3 +50,57 @@ export const motivation = [
   { title: "La discipline bat le talent", text: "Le talent ouvre la porte. La discipline, jour après jour, te fait aller jusqu'au bout." },
   { title: "Tomber fait partie du chemin", text: "Chaque échec t'apprend quelque chose. L'important n'est pas de tomber, c'est de te relever." },
 ];
+
+// Exercices guidés de la section Motivation (tirés des vidéos)
+export type ExerciseStep = { label: string; seconds: number; scale: number };
+export type Exercise = {
+  id: string;
+  title: string;
+  intro: string;
+  instructions: string[];
+  steps: ExerciseStep[];
+  cycles: number;
+  end: string;
+};
+
+export const exercises: Exercise[] = [
+  {
+    id: "stress",
+    title: "Calme ton stress en 60 s",
+    intro: "Ton cerveau peut réapprendre le calme. Fais cet exercice chaque matin, il deviendra une habitude.",
+    instructions: [
+      "Inspire profondément pendant 4 secondes.",
+      "Retiens ton souffle pendant 4 secondes.",
+      "Expire lentement pendant 6 secondes.",
+      "Répète 3 fois et visualise-toi calme, comme un lac immobile.",
+    ],
+    steps: [
+      { label: "Inspire", seconds: 4, scale: 1 },
+      { label: "Retiens", seconds: 4, scale: 1 },
+      { label: "Expire", seconds: 6, scale: 0.55 },
+    ],
+    cycles: 3,
+    end: "Bravo. Sens le calme.",
+  },
+  {
+    id: "habitude",
+    title: "Efface une habitude en 60 s",
+    intro: "Chaque fois que tu répètes un comportement, ton cerveau le renforce. Pour changer, crée un nouveau chemin et répète-le.",
+    instructions: [
+      "Ferme les yeux et inspire profondément.",
+      "Expire lentement, laisse le stress sortir comme une brume.",
+      "Visualise le moment où tu dis non à cette vieille habitude.",
+      "Répète : « Je choisis de laisser aller cette habitude. »",
+    ],
+    steps: [
+      { label: "Ferme les yeux, inspire", seconds: 5, scale: 1 },
+      { label: "Expire lentement", seconds: 6, scale: 0.55 },
+      { label: "Visualise-toi dire non", seconds: 12, scale: 0.8 },
+      { label: "Imagine un chemin lumineux", seconds: 12, scale: 1 },
+      { label: "« Je choisis de laisser aller »", seconds: 12, scale: 0.8 },
+      { label: "Ouvre doucement les yeux", seconds: 5, scale: 0.55 },
+    ],
+    cycles: 1,
+    end: "Garde cette intention toute la journée.",
+  },
+];
