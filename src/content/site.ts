@@ -31,7 +31,7 @@ export const site = {
     whatsapp: "243893250105",
   },
   stats: [
-    { value: "6", label: "Films en ligne" },
+    { value: "11", label: "Films en ligne" },
     { value: "90s", label: "Max par histoire" },
     { value: "1", label: "Histoire par jour" },
   ],
@@ -44,6 +44,11 @@ export const films: Film[] = [
   { title: "Il a pris Paris avec une simple feuille de papier", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "7nhUhtIMn8o", poster: "from-blue-950 via-stone-900 to-black" },
   { title: "Une guerre déclenchée par un chien ?", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "Ht5yRjUpyEY", poster: "from-emerald-950 via-stone-900 to-black" },
   { title: "Quand un drapeau ouvre Manille aux Britanniques", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "SnUvsKR1ccM", poster: "from-red-950 via-stone-900 to-black" },
+  { title: "L'expérience des fentes de Young", year: "2026", duration: "Moins de 90 s", genre: "Science", synopsis: "Une expérience simple qui a changé notre façon de voir la lumière, expliquée en moins de 90 secondes.", youtubeId: "aNdUgA8EnpM", poster: "from-sky-950 via-stone-900 to-black" },
+  { title: "Les canons en bois qui ont ridiculisé l'armée du Nord", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "qvCpDZ8DhJg", poster: "from-stone-800 via-stone-900 to-black" },
+  { title: "Le pire incendie de l'histoire des États-Unis… que tout le monde a oublié", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "riW1OyO7MY4", poster: "from-orange-950 via-stone-900 to-black" },
+  { title: "L'avocat qui s'est tué en prouvant la thèse de son client", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "QzpZLC4dw34", poster: "from-slate-800 via-stone-900 to-black" },
+  { title: "Des cerfs-volants de 20 mètres pour parler aux morts (Guatemala)", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "bmBkqted5YI", poster: "from-fuchsia-950 via-stone-900 to-black" },
 ];
 
 // Messages de la section Motivation
