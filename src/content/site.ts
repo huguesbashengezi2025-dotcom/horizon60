@@ -34,6 +34,7 @@ export const site = {
 };
 
 export const films: Film[] = [
+  { title: "La guerre du cochon", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "1859 : les États-Unis et l'Angleterre au bord de la guerre à cause d'un cochon. 12 ans de face-à-face, une seule victime.", youtubeId: "1_oNm3Li1LQ", poster: "from-amber-950 via-stone-900 to-black" },
   { title: "Debout", year: "2026", duration: "8 min", genre: "Motivation", synopsis: "Tomber sept fois, se relever huit. L'histoire d'un jeune qui refuse d'abandonner.", poster: "from-amber-900 via-orange-950 to-black" },
   { title: "5h du matin", year: "2025", duration: "6 min", genre: "Discipline", synopsis: "Pendant que la ville dort, certains construisent leur avenir.", poster: "from-rose-950 via-red-950 to-black" },
   { title: "Rien n'est impossible", year: "2025", duration: "10 min", genre: "Court métrage", synopsis: "Parti de rien, il a décidé que sa situation ne serait pas sa destination.", poster: "from-yellow-900 via-stone-900 to-black" },
