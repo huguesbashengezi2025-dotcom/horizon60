@@ -39,7 +39,7 @@ export const films: Film[] = [
   { title: "Récit TikTok n°1", year: "2026", duration: "Format court", genre: "TikTok", synopsis: "Une histoire vraie à découvrir sur mon compte TikTok.", tiktokUrl: "https://vt.tiktok.com/ZSgENYrtC/", poster: "from-pink-950 via-stone-900 to-black" },
   { title: "Récit TikTok n°2", year: "2026", duration: "Format court", genre: "TikTok", synopsis: "Une autre histoire vraie à découvrir sur mon compte TikTok.", tiktokUrl: "https://vt.tiktok.com/ZSgELELak/", poster: "from-violet-950 via-stone-900 to-black" },
   { title: "Il a pris Paris avec une simple feuille de papier", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "7nhUhtIMn8o", poster: "from-blue-950 via-stone-900 to-black" },
-  { title: "Debout", year: "2026", duration: "8 min", genre: "Motivation", synopsis: "Tomber sept fois, se relever huit. L'histoire d'un jeune qui refuse d'abandonner.", poster: "from-amber-900 via-orange-950 to-black" },
+  { title: "Une guerre déclenchée par un chien ?", year: "2026", duration: "Moins de 90 s", genre: "Le Récit Oublié", synopsis: "Une histoire vraie et incroyable, racontée en moins de 90 secondes.", youtubeId: "Ht5yRjUpyEY", poster: "from-emerald-950 via-stone-900 to-black" },
   { title: "5h du matin", year: "2025", duration: "6 min", genre: "Discipline", synopsis: "Pendant que la ville dort, certains construisent leur avenir.", poster: "from-rose-950 via-red-950 to-black" },
 ];
 
