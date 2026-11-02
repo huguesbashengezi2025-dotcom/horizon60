@@ -104,3 +104,108 @@ export const exercises: Exercise[] = [
     end: "Garde cette intention toute la journée.",
   },
 ];
+
+// Section Exercices : pratiques courtes de bien-être
+export type Practice = {
+  id: string;
+  title: string;
+  duration: string;
+  why: string;
+  steps: string[];
+  quote?: { text: string; source: string };
+  care: string;
+};
+
+export const practices: Practice[] = [
+  {
+    id: "respiration",
+    title: "Respiration 4-4-6",
+    duration: "1 min",
+    why: "Une expiration plus longue que l'inspiration aide souvent le corps à ralentir et à se détendre.",
+    steps: [
+      "Assieds-toi, le dos droit, les épaules relâchées.",
+      "Inspire par le nez pendant 4 secondes.",
+      "Retiens doucement ton souffle pendant 4 secondes.",
+      "Expire lentement par la bouche pendant 6 secondes.",
+      "Répète 3 fois.",
+    ],
+    care: "Ne force jamais. Si la tête te tourne, arrête et reprends une respiration normale.",
+  },
+  {
+    id: "meditation",
+    title: "Méditation du souffle",
+    duration: "5 min",
+    why: "Porter son attention sur la respiration entraîne l'esprit à revenir au moment présent.",
+    steps: [
+      "Installe-toi au calme, assis confortablement, et mets un minuteur de 5 minutes.",
+      "Ferme les yeux ou regarde un point devant toi.",
+      "Observe ton souffle naturel, sans chercher à le changer.",
+      "Quand ton esprit part ailleurs, remarque-le simplement et reviens au souffle.",
+    ],
+    care: "C'est normal d'être distrait souvent. Si 5 minutes c'est trop, commence par 2.",
+  },
+  {
+    id: "victoires",
+    title: "Journal des victoires",
+    duration: "3 min",
+    why: "Noter ce qui a marché aide à voir tes progrès, même les petits, au lieu de ne retenir que ce qui manque.",
+    steps: [
+      "Le soir, prends un carnet ou les notes de ton téléphone.",
+      "Écris 3 victoires de la journée, même petites : « Je me suis levé à l'heure », « J'ai fini ma vidéo ».",
+      "Relis la liste de la semaine le dimanche.",
+    ],
+    care: "Il n'y a pas de victoire trop petite. Le but est de remarquer, pas de te comparer.",
+  },
+  {
+    id: "peur",
+    title: "Une peur par jour",
+    duration: "Variable",
+    why: "Faire face à une petite peur, pas à pas, rend souvent la suivante plus facile.",
+    steps: [
+      "Choisis une petite chose qui te met un peu mal à l'aise : poser une question, publier une vidéo, appeler quelqu'un.",
+      "Fais-la aujourd'hui, à ton rythme.",
+      "Note ensuite comment ça s'est passé, en vrai.",
+    ],
+    quote: {
+      text: "Celui qui ne surmonte pas chaque jour une peur n'a pas appris la leçon de la vie.",
+      source: "Ralph Waldo Emerson, « Courage », conférence de 1859",
+    },
+    care: "Choisis une peur à ta mesure, jamais une action dangereuse pour toi ou pour les autres.",
+  },
+  {
+    id: "gratitudes",
+    title: "Trois gratitudes",
+    duration: "2 min",
+    why: "Remarquer ce qui va bien aide à équilibrer le regard qu'on porte sur sa journée.",
+    steps: [
+      "Avant de dormir, pense à 3 choses pour lesquelles tu es reconnaissant aujourd'hui.",
+      "Sois précis : « le repas avec ma sœur » plutôt que « ma famille ».",
+      "Pour chacune, demande-toi pourquoi elle compte pour toi.",
+    ],
+    care: "Les jours difficiles, une seule gratitude suffit. Ce n'est pas une obligation d'aller bien.",
+  },
+  {
+    id: "chemin",
+    title: "Visualiser le chemin",
+    duration: "3 min",
+    why: "Imaginer seulement le but ne suffit pas. Imaginer aussi les étapes et les obstacles prépare à mieux agir.",
+    steps: [
+      "Ferme les yeux et imagine ton objectif atteint, en détail.",
+      "Imagine ensuite le chemin : la première étape que tu peux faire cette semaine.",
+      "Pense à un obstacle probable, et à ce que tu feras s'il arrive : « Si…, alors je… ».",
+    ],
+    care: "La visualisation aide à se préparer, mais elle ne remplace pas l'action. Termine toujours par une étape concrète.",
+  },
+  {
+    id: "ami",
+    title: "Parle-toi comme à un ami",
+    duration: "2 min",
+    why: "On est souvent bien plus dur avec soi-même qu'avec les autres. Changer de ton aide à se relever après une erreur.",
+    steps: [
+      "Quand tu te critiques, arrête-toi un instant.",
+      "Demande-toi : « Qu'est-ce que je dirais à un ami dans la même situation ? »",
+      "Dis-toi la même chose, avec les mêmes mots bienveillants.",
+    ],
+    care: "Être bienveillant avec soi ne veut pas dire tout accepter. C'est se donner l'énergie de faire mieux.",
+  },
+];
