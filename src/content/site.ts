@@ -34,7 +34,6 @@ export const site = {
 };
 
 export const films: Film[] = [
-  { title: "Ouvrir le troisième œil", year: "2026", duration: "Vidéo", genre: "Éveil spirituel", synopsis: "La dernière vidéo dont vous aurez besoin pour ouvrir votre troisième œil, et être libre.", youtubeId: "XGsv_hdavzo", poster: "from-cyan-950 via-stone-900 to-black" },
   { title: "Debout", year: "2026", duration: "8 min", genre: "Motivation", synopsis: "Tomber sept fois, se relever huit. L'histoire d'un jeune qui refuse d'abandonner.", poster: "from-amber-900 via-orange-950 to-black" },
   { title: "5h du matin", year: "2025", duration: "6 min", genre: "Discipline", synopsis: "Pendant que la ville dort, certains construisent leur avenir.", poster: "from-rose-950 via-red-950 to-black" },
   { title: "Rien n'est impossible", year: "2025", duration: "10 min", genre: "Court métrage", synopsis: "Parti de rien, il a décidé que sa situation ne serait pas sa destination.", poster: "from-yellow-900 via-stone-900 to-black" },
