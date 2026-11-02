@@ -15,7 +15,7 @@ export const site = {
   name: "Horizon 060",
   tagline: "Des histoires qui donnent la force d'avancer.",
   intro:
-    "Je suis Hugues Bashengezi, réalisateur à Kinshasa. À travers Horizon 060, je crée des films et des documentaires de motivation pour inspirer chacun à croire en ses rêves et à ne jamais abandonner.",
+    "Je suis Hugues Bashengezi, réalisateur à Kinshasa. À travers Horizon 060, je crée des films de motivation pour inspirer chacun à croire en ses rêves et à ne jamais abandonner.",
   author: "Hugues Bashengezi",
   location: "Kinshasa, RDC",
   showreelId: "", // vidéo YouTube d'accueil (bande-annonce), optionnelle
@@ -28,9 +28,9 @@ export const site = {
     whatsapp: "", // ex. "243810000000"
   },
   stats: [
-    { value: "12+", label: "Films réalisés" },
-    { value: "500k", label: "Vues cumulées" },
-    { value: "4", label: "Documentaires" },
+    { value: "5", label: "Films en ligne" },
+    { value: "90s", label: "Max par histoire" },
+    { value: "1", label: "Histoire par jour" },
   ],
 };
 
@@ -43,8 +43,10 @@ export const films: Film[] = [
   { title: "5h du matin", year: "2025", duration: "6 min", genre: "Discipline", synopsis: "Pendant que la ville dort, certains construisent leur avenir.", poster: "from-rose-950 via-red-950 to-black" },
 ];
 
-export const documentaries: Film[] = [
-  { title: "Ils ont réussi à Kinshasa", year: "2026", duration: "24 min", genre: "Documentaire", synopsis: "Des entrepreneurs partis de zéro racontent leur parcours.", poster: "from-emerald-950 via-stone-900 to-black" },
-  { title: "La force des mamans", year: "2025", duration: "18 min", genre: "Documentaire", synopsis: "Les femmes qui font tenir les familles, et ce qu'elles nous apprennent.", poster: "from-fuchsia-950 via-purple-950 to-black" },
-  { title: "Rêver plus grand", year: "2024", duration: "30 min", genre: "Documentaire", synopsis: "La jeunesse congolaise et ses ambitions, sans filtre.", poster: "from-red-950 via-orange-950 to-black" },
+// Messages de la section Motivation
+export const motivation = [
+  { title: "Commence avant d'être prêt", text: "Personne ne se sent prêt le premier jour. Ceux qui avancent sont ceux qui commencent quand même." },
+  { title: "Ta situation n'est pas ta destination", text: "D'où tu viens ne décide pas où tu vas. Chaque jour est une nouvelle chance de changer ton histoire." },
+  { title: "La discipline bat le talent", text: "Le talent ouvre la porte. La discipline, jour après jour, te fait aller jusqu'au bout." },
+  { title: "Tomber fait partie du chemin", text: "Chaque échec t'apprend quelque chose. L'important n'est pas de tomber, c'est de te relever." },
 ];

@@ -55,7 +55,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 1.1, ease }}
           className="mb-6 text-xs uppercase text-primary sm:text-sm"
         >
-          Films · Documentaires · Motivation
+          Films · Motivation · Kinshasa
         </motion.p>
         <h1 className="font-serif text-5xl leading-[0.95] tracking-tight sm:text-7xl md:text-8xl">
           {words.map((w, i) => (

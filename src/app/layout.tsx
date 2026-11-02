@@ -7,7 +7,7 @@ const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const serif = Instrument_Serif({ variable: "--font-serif", subsets: ["latin"], weight: "400", style: ["normal", "italic"] });
 
 export const metadata: Metadata = {
-  title: `${site.name} | Films et documentaires`,
+  title: `${site.name} | Films et motivation`,
   description: site.intro,
 };
 
